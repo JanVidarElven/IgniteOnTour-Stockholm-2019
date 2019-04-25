@@ -8,7 +8,7 @@ Get-GraphSecurityAlert # (Specify your Admin UPN and the AppId as the Password)
 
 Get-GraphSecurityAlert -top 1
 
-Get-GraphSecurityAlert -userPrincipalName jan.vidar@elven.no -severity medium -Verbose | select title, status, description, assignedTo, severity, userStates
+Get-GraphSecurityAlert -userPrincipalName jan.vidar@elven.no -severity medium -Verbose | Select-Object title, status, description, assignedTo, severity, userStates
 
 # Set Security Alert
 Set-GraphSecurityAlert -id '<enter the value>'
